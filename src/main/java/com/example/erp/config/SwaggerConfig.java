@@ -24,7 +24,7 @@ public class SwaggerConfig {
     public Docket api() {
 
         List<Predicate<RequestHandler>> predicateList = new ArrayList<>();
-        predicateList.add(RequestHandlerSelectors.basePackage("com.example.movie.ctrl"));
+        predicateList.add(RequestHandlerSelectors.basePackage("com.example.erp.ctrl"));
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(swaggerInfo())
